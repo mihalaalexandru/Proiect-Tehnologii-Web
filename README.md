@@ -17,6 +17,8 @@ Student:
 
 •	Daca o cerere este "Respins Final", poate reincarca un nou fisier.
 
+•   Vizualizeaza un "Citat al zilei" sau informatii externe preluate printr-un API public, afisate in Dashboard.
+
 Profesor:
 
 •	Poate crea, modifica si sterge sesiuni de inscriere.
@@ -142,7 +144,7 @@ Faza 1: Arhitectura si Configurare (Fundatia)
 -	Frontend: O aplicatie de tip Single Page Application  (creat cu React/Vue) care consuma API-ul.
 
 
-•	Design-ul Bazei de Date: Proiectarea schemei bazei de date (SQL sau NoSQL) pentru a stoca entitatile: Users , Sessions , Applications , Documents .
+•	Design-ul Bazei de Date: Proiectarea schemei bazei de date relationale (SQL) folosind Sequelize pentru a stoca entitatile: Users, Sessions, Applications.
 
 ________________________________________________________________________________________________________________________________________________________________
 
@@ -266,7 +268,7 @@ Asigurarea ca toate partile functioneaza corect impreuna.
 ________________________________________________________________________________________________________________________________________________________________
 
 
-3. Tehnologii, Biblioteci(MongoDB, Express, React, Node.js)
+3. Tehnologii, Biblioteci(SQLite, Express, React, Node.js)
 
 
 Frontend (Partea Client - SPA)
@@ -276,6 +278,8 @@ Frontend (Partea Client - SPA)
 •	Framework SPA: React.js/Vue.js - Pentru construirea interfetei de tip SPA.
 
 •	Navigare: React Router - Pentru a gestiona paginile in SPA.
+
+•   Build Tool : Vite (pentru initializare rapida si performanta).
 
 •	Apeluri API: Axios - O biblioteca populara pentru a face cereri HTTP catre backend.
 
@@ -290,11 +294,12 @@ Backend (Partea Server - API)
 
 •	Framework Server: Express.js - Pentru a construi rapid si eficient API-ul RESTful.
 
-•	Baza de Date: MongoDB (NoSQL).
+•	Baza de Date: SQLite - stocare locala in fisier.
 
-•	Comunicarea cu BD: Mongoose (pentru MongoDB)
+•   ORM: Sequelize - pentru modelarea datelor si interactiunea cu baza de date relationala
 
+•   Autentificare: JSON Web Tokens si Bcrpy
 
+•   Upload Fisiere: Multer
 
-
-
+•   Serviciu Extern: Axios - pentru prelucrarea de date externe
