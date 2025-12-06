@@ -24,7 +24,7 @@ Pentru a rula proiectul local, urmati acesti pasi:
 ### 1. Clonarea Repository-ului
 Deschideti un terminal (CMD/PowerShell/Bash) si rulati:
 
-git clone https://github.com/VoicuLeonard/Proiect-Tehnologii-Web.git
+git clone https://github.com/mihalaalexandru/Proiect-Tehnologii-Web.git
 
 cd AplicatieTW
 
